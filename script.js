@@ -1,10 +1,10 @@
 //BUTTONS
-const buttonB= document.querySelectorAll('.button_B');
 const buttonA = document.querySelector('#button_A');
-const headingA = document.querySelector('#heading_A');
+const buttonB= document.querySelectorAll('.button_B');
 const btn = document.querySelector('#button_C');
 
 const txt = document.querySelector('#buttonMachine');
+const headingA = document.querySelector('#heading_A');
 
 function updateBtn() {
   if (btn.textContent === 'Start machine') {
