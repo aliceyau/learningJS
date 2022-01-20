@@ -14,20 +14,20 @@ function updateBtn() {
     btn.textContent = 'Start machine';
     txt.textContent = 'The machine is stopped.';
   }
-}
+};
 
 function buttonBGotClicked() {
    const para = document.createElement('p');
   para.textContent = 'You clicked the button!';
   document.body.appendChild(para);
-}
+};
 
 
 function buttonAGotClicked() {
 const name = prompt('Thanks for saying Hi! What is your name?');
   alert(`Hello ${name}, nice to see you!`);
   headingA.textContent = `Welcome ${name}`;
-}
+};
 
 
 btn.addEventListener('click', updateBtn);
@@ -54,7 +54,8 @@ function checkGuess() {
   const userGuess = Number(guessField.value);
   if (guessCount === 1) {
     guesses.textContent = 'Previous guesses: ';
-  }
+  };
+  
   guesses.textContent += userGuess + ' ';
 
   if (userGuess === randomNumber) {
