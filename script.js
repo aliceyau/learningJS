@@ -1,6 +1,6 @@
 //BUTTONS
 const buttonA = document.querySelector('#button_A');
-//const buttonB= document.querySelectorAll('.button_B');
+const buttonB= document.querySelectorAll('.button_B');
 //const buttonC = document.querySelector('#button_C');
 
 const txt = document.querySelector('#buttonMachine');
@@ -32,7 +32,7 @@ function buttonCGotClicked() {
 
 
 buttonA.addEventListener('click', buttonAGotClicked);
-//buttonB.addEventListener('click', buttonBGotClicked);
+buttonB.addEventListener('click', buttonBGotClicked);
 //buttonC.addEventListener('click', buttonCGotClicked);
 
 //Guessing game
