@@ -1,40 +1,38 @@
 //BUTTONS
 const buttonA = document.querySelector('#button_A');
 const buttonB= document.querySelectorAll('.button_B');
-const btn = document.querySelector('#button_C');
+const buttonC = document.querySelector('#button_C');
 
 const txt = document.querySelector('#buttonMachine');
 const headingA = document.querySelector('#heading_A');
+const para = document.createElement('clickedButtonB');
 
-function updateBtn() {
-  if (btn.textContent === 'Start machine') {
-    btn.textContent = 'Stop machine';
+function buttonCGotClicked() {
+  if (buttonC.textContent === 'Start machine') {
+    buttonC.textContent = 'Stop machine';
     txt.textContent = 'The machine has started!';
   } else {
-    btn.textContent = 'Start machine';
+    buttonC.textContent = 'Start machine';
     txt.textContent = 'The machine is stopped.';
   }
 };
 
 function buttonBGotClicked() {
-   const para = document.createElement('p');
   para.textContent = 'You clicked the button!';
   document.body.appendChild(para);
 };
 
 
 function buttonAGotClicked() {
-const name = prompt('Thanks for saying Hi! What is your name?');
+  const name = prompt('Thanks for saying Hi! What is your name?');
   alert(`Hello ${name}, nice to see you!`);
   headingA.textContent = `Welcome ${name}`;
 };
 
 
-btn.addEventListener('click', updateBtn);
+buttonC.addEventListener('click', buttonCGotClicked);
 buttonB.addEventListener('click', buttonBGotClicked);
-
-
-buttonA.onclick.addEventListener('click', buttonAGotClicked);
+buttonA.addEventListener('click', buttonAGotClicked);
 
 
 //Guessing game
