@@ -1,11 +1,23 @@
 //BUTTONS
 const buttonA = document.querySelector('#button_A');
-const buttonB= document.querySelectorAll('.button_B');
-const buttonC = document.querySelector('#button_C');
+//const buttonB= document.querySelectorAll('.button_B');
+//const buttonC = document.querySelector('#button_C');
 
 const txt = document.querySelector('#buttonMachine');
 const headingA = document.querySelector('#heading_A');
-const para = document.createElement('clickedButtonB');
+
+function buttonAGotClicked() {
+  const name = prompt('Thanks for saying Hi! What is your name?');
+  alert(`Hello ${name}, nice to see you!`);
+  headingA.textContent = `Welcome ${name}`;
+};
+
+function buttonBGotClicked() {
+  const para = document.createElement('clickedButtonB');
+  para.textContent = 'You clicked the button!';
+  document.body.appendChild(para);
+};
+
 
 function buttonCGotClicked() {
   if (buttonC.textContent === 'Start machine') {
@@ -17,23 +29,11 @@ function buttonCGotClicked() {
   }
 };
 
-function buttonBGotClicked() {
-  para.textContent = 'You clicked the button!';
-  document.body.appendChild(para);
-};
 
 
-function buttonAGotClicked() {
-  const name = prompt('Thanks for saying Hi! What is your name?');
-  alert(`Hello ${name}, nice to see you!`);
-  headingA.textContent = `Welcome ${name}`;
-};
-
-
-buttonC.addEventListener('click', buttonCGotClicked);
-buttonB.addEventListener('click', buttonBGotClicked);
 buttonA.addEventListener('click', buttonAGotClicked);
-
+//buttonB.addEventListener('click', buttonBGotClicked);
+//buttonC.addEventListener('click', buttonCGotClicked);
 
 //Guessing game
 let randomNumber = Math.floor(Math.random() * 100) + 1;
