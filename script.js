@@ -1,5 +1,5 @@
 //BUTTONS
-const buttonB= document.querySelectorAll('#button_B');
+const buttonB= document.querySelectorAll('.button_B');
 const buttonA = document.querySelector('#button_A');
 const headingA = document.querySelector('#heading_A');
 const btn = document.querySelector('#button_C');
