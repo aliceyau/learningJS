@@ -2,6 +2,32 @@
 const buttonB= document.querySelectorAll('#button_B');
 const buttonA = document.querySelector('#button_A');
 const headingA = document.querySelector('#heading_A');
+const btn = document.querySelector('#button_C');
+
+const txt = document.querySelector('#buttonMachine');
+
+btn.addEventListener('click', updateBtn);
+
+function updateBtn() {
+  if (btn.textContent === 'Start machine') {
+    btn.textContent = 'Stop machine';
+    txt.textContent = 'The machine has started!';
+  } else {
+    btn.textContent = 'Start machine';
+    txt.textContent = 'The machine is stopped.';
+  }
+}
+
+
+function updateBtn() {
+  if (btn.textContent === 'Start machine') {
+    btn.textContent = 'Stop machine';
+    txt.textContent = 'The machine has started!';
+  } else {
+    btn.textContent = 'Start machine';
+    txt.textContent = 'The machine is stopped.';
+  }
+}
 
 buttonB.onclick = () => {
   const para = document.createElement('p');
